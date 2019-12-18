@@ -46,7 +46,7 @@ namespace Examples
          try
          {
             MailMessage mail = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmaill.com");
+            SmtpClient SmtpServer = new SmtpClient("<HOST>");
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("<USERNAME>", "<PASSWORD>");
             SmtpServer.EnableSsl = true;
